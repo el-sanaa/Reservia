@@ -101,7 +101,6 @@ main
    align-items: center;
    overflow: hidden;
 }
-
 .element_filter i.fa 
 {
     padding: 20px 20px;
@@ -176,7 +175,7 @@ main
     padding-left: 0px;
     font-size: 19px;
 }
-.info i.fa 
+.infos .info i.fa 
 { 
    color: black;
 }
@@ -493,10 +492,225 @@ footer
  
 
 
+/* Nouvelles règles si la fenêtre fait max de large 1024px de large */
+/* Style header */
+@media all and (max-width: 1024px)
+{
+    body
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .navigation ul .link a
+    {
+        color: #0065fc;
+    }
+
+    .filters h2
+    {
+        font-size: 23px;
+    }
+    .filters p
+    {
+        font-size: 19px;
+        
+    }
+
+    .element_filter
+    {
+        width: 50%;
+
+    }
+    
+    .tags
+    {
+        height: 48px;
+        font-size: 1em;
+        width: 100%;
+        color: #0065fc;
+    }
+
+    .infos
+    {
+        padding: 25px;
+    }
+    .info
+    {
+        font-size: 18px;
+    }
+
+    .infos .info i.fa
+    {
+        color: #0065fc;
+    }
+
+    .hebergements
+    {
+        padding: 10px;
+    }
+    .hebergements_marseille
+    {
+      background: none; 
+       
+    }
+
+    .plus_populaires
+    {
+        
+        background: none;
+    }
+
+    .titrepopulaires h2
+    {
+        color: #0065fc;
+        text-decoration-line: underline;
+        font-size: 20px;
+    }
+    .cardall
+    {
+        width: 30%;
+        height: 225px;
+        box-shadow: 0 0 10px #0065fc;
+    }
+    .Afficher_plus
+    {
+        color: black;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    p
+    {
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .content_text h4
+    {
+        font-size: 12px;
+        margin: 5px;
+    }
+    .content_text 
+    
+    {
+        margin: 5px;
+        font-size: 12px;
+        
+    } 
+     
+    i.fa:not(.grey)
+    {
+        color: #0065fc; 
+        font-size: 12px;   
+    }
+    i.fa
+    {
+        font-size: 12px;
+    }
+           
+    .plus_populaires i.fa-line-chart
+    {
+        color: black;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+    .content_textpp h4
+    {
+       position: relative;
+       left: 15px;
+       font-size: 13px;
+    }
+    .content_textpp p
+    {
+        position: relative;
+        left: 15px;
+        font-size: 12px;
+    }    
+    .stars
+    {
+        position: relative;
+        left: 15px;
+        top: 13px;
+    }
+    .cardpp
+    {
+        margin-bottom: 30px;
+        width:  95%;
+        height: 146px;
+        box-shadow: 0 0 10px #0065fc;
+        margin-left: 10px;
+    }
+    
+    /*Style activites*/
+    .activites
+    {
+        background-color: #deebff;
+        width: 100%;
+                      
+    }
+
+    .activites .cardtwodouble,
+    .activites .cardfourdouble,
+    .activites .card
+    {
+        height: 280px;
+        width: 180px;
+        
+    }
+    
+    /*Style footer*/
+    footer 
+    {
+        background-color: #fff;
+        margin-top: 30px;
+        padding: 10px 10px;
+     }
+    
+     .charte ul li,
+     .renseignements ul li,
+     .assistance ul li
+     {
+         margin-bottom: 20px;
+         
+     }
+    
+    .charte ul,
+    .assistance ul,
+    .renseignements ul
+    {
+        list-style-type: none;
+        height: 160px;
+        padding-top: 10px;
+    }    
+    .renseignements ul .optiona a,
+    .assistance ul .optiona a,
+    .charte ul .optiona a
+    {
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .renseignements ul .optionc a,
+    .renseignements ul .optionb a,
+    .assistance ul .optionb a,
+    .assistance ul .optionc a,
+    .charte ul .optionb a,
+    .charte ul .optionc a,
+    .charte ul .optiond a
+    {
+        font-size: 17px;
+    }
+
+
+
+}
+
+
+
+
 
 
 /* Nouvelles règles si la fenêtre fait moins de 736px de large */
-/* Style header */
+
 @media screen and (max-width: 736px)
 {
     body
@@ -504,62 +718,126 @@ footer
         width: 100%;
         margin: auto;
     }
+    /*Style header*/
+    
     header
     {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        
+        flex-wrap: wrap;       
     }    
     .logo img
     {
-        width: 80px;
+        width: 60px;
     }
     .logo
     {
-        padding: 20px;
+        padding: 15px;
         padding-left: 10px;
+        width: 50%;
     }
     .navigation ul 
     {
-        padding-left: 10px;
-        align-items: flex-start;
-        margin-right: 60px;
+        width: 35%;
+        margin: 20px;
         
     }
-    .navigation ul .link,
     .navigation ul .link_option
     {
-        padding: 40px 5px 5px 5px;
-        
-        
+        padding: 35px;
+        padding-left: 60px;
+        text-decoration-line: underline;
     }
-    .navigation ul .signup a
+    .navigation ul .link
     {
-        padding: 20px;
+        padding: 35px;
     }    
+    .navigation ul .signup
+    {
+        padding: 5px;
+
+    } 
+    .navigation ul .link a
+    {
+        color: black;
+    }
     .navigation ul .link a,
     .navigation ul .signup a,
     .navigation ul .link_option a
     {
-        font-size: 15px;
-            }
-    
-    .filters h2
-    {
-        padding: 5px;
-        font-size: 18px;
+        font-size: 10px;
     }
 
+    /*Style elements filters*/
+    main
+    {
+        width: 100%;
+    }
+        #main_header
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .filters h2{
+        font-size: 13px;
+        padding: 5x;
+    }
+    .filters p{
+        font-size: 10px;
+    }
+    .filters .element_filter
+    {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 90%;
+    height: 30px;
+    align-items: center;
+    overflow: hidden;
+    }
+    .filters .element_filter i.fa
+    {
+        color: black;
+        font-size: 12px;
+    }
+    .element_filter i
+    {
+        width: 70px;
+    }
+    .element_filter .search_input
+    {
+        border: 1px solid #fff;
+        height: 30px;
+        font-size: 12px;
+        width: 210px; 
+        font-weight: bold;
+        color: black;
+    }
+    .filters .element_filter .search_button
+    
+    .search_button
+    {
+        border: 1px solid #0065fc;
+        padding: 15px 10px;
+        background-color: #0065fc;
+        font-size: 15px;
+        color: white;
+        width: 90px;
+        
+    }
+    /*Style tags*/
+    
     .tags
     {
         display: flex;
         flex-direction: column;
-        padding: 5px;
-        height: 38px;
+        justify-content: space-between;
+        
+        
         font-weight: bold;
-        font-size: 15px;
+        font-size: 11px;
+        color: black;
+        padding: 5px;
+        padding-left: 3px;
     }
     .tags .tag
     {
@@ -568,148 +846,169 @@ footer
         display: flex;
         align-items: center;
         margin: 0 15px;
+        width: 110px;
+        height: 28px;
+        
+
     }
     .tags .titre
     {
         display: flex;
         align-items: center;
-        font-size: 15px;
+        font-size: 11px;
+    }
+        
+    .tags .tag i.fa
+    {
+        font-size: 9px;
     }
     .tag i.fa
     {
         color: #0065fc;
         border-radius: 50px;
-        width: 41px;
-        height: 42px;
+        width: 33px;
+        height: 28px;
         display: flex;
         align-items: center;
         margin-left: 0px;
         background-color: #deebff;
     }
-    .tags i.fa
-    {
-        justify-content: center;
-    }
     .tag span
     {
-        padding: 0 20px;
-        
+        padding: 0 10px;
+        font-size: 10px;
     }
 
-
+    .infos 
+    {
+        width: 100%;
+    }
     .info
     {
         display: flex;
         flex-direction: row;
-        padding: 15px;
-        padding-left: 15px;
-        font-size: 14px;
+        padding: 10px;
+        padding-left: 1px;
+        font-size: 13px;
+        width: 100%;
     }
-    .info i.fa 
+    .infos .info i.fa 
     { 
-       color: black;
+        color: black;
+        margin-bottom: 15px;
     }
     .info i
     {
         display: flex;
         padding: 5px;
-        border-radius: 20px;
+        border-radius: 40px;
         border: 1px solid #999;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        
+        margin-right: 5px; 
+
     }
-    .info span
+    .infos .info span
     {
-        display: flex;
-        align-items: center;
+       font-size: 10px;
     }
-    
-
-
-    .element_filter
-    {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 31%;
-    height: 42px;
-    align-items: center;
-    overflow: hidden;
-
-    }
-
-    .element_filter i.fa 
-    {
-        padding: 20px 20px;
-        background-color: #ccc;
-        
-    }
-    .search_input
-    {
-        border: 1px solid #fff;
-        height: 48px;
-        font-size: 1.3em;
-        width: 150px; 
-        font-weight: bold;
-        color: black;
-    }
-
-
 
     /*Style hebergements*/
     .hebergements
     {
         display: flex;
-        flex-direction: column;
+       flex-wrap: wrap-reverse;
+       padding: 10px;
+           }
+    .plus_populaires .titrepopulaires i.fa-line-chart
+    {
+        color: black;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+    .plus_populaires h2
+    {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .content_textpp h4
+    {
+        position: relative;
+        left: 15px;
+        bottom: 11px;
+        font-size: 10px;
+    }
+    .content_textpp p
+    {
+        position: relative;
+        left: 15px;
+        bottom: 8px;
+        font-size: 8px;
+    }    
+    .stars
+    {
+        position: relative;
+        left: 15px;
+        top: 25px;
+
+    }
+    .populaires_cards
+    {
+        padding: 5px;
+               
+    }
+    .cardpp
+    {
+        width: 300px;
+        height: 125px;
+        box-shadow: 0 0 10px #2e2d2d77;
         
+    }
+    .plus_populaires
+    {
         padding: 5px; 
+        width: 100%;
+        background-color: #f2f2f2;
         
+    }
+    .hebergements_marseille h2
+    {
+        padding: 1px;
+        font-size: 14px;
     } 
     .hebergements_marseille
     {
         width: 100%;
         background: none;
-        padding-left: 5px;
+       
         padding: 5px;
     }
     .firstcolumn
     {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-between;
-    
-
     }
     .secondcolumn
     {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
+        flex-wrap: wrap;
     }
-
     .cardall
     {
-        height: 150px;
-        width: 260px;
-        
-        
+        height: 140px;
+        width: 300px;
+        box-shadow: 0 0 10px #2e2d2d77;
     }
-    
     .content_text h4
     {
-        font-size: 11px;
+        font-size: 10px;
         margin: 6px;
-        padding: 15x;
-
+        padding: 5x;
     }
-    
     .content_text p
     {
         margin: 6px;
-        font-size: 10px;
+        font-size: 8px;
     } 
      
     i.fa:not(.grey)
@@ -721,131 +1020,82 @@ footer
     {
         font-size: 8px;
     }
-
-
-    .plus_populaires
+    .hebergements_marseille h5
     {
-        padding: 5px; 
-       
-        width: 100%;
-    }
-   
-    .plus_populaires i.fa-line-chart
-    {
-        color: black;
-        font-size: 15px;
-        padding-top: 20px;
-    }
-
-
-    .content_textpp h4
-    {
-        position: relative;
-        left: 15px;
-        bottom: 11px;
-        font-size: 11px;
-    }
-    .content_textpp p
-    {
-        position: relative;
-        left: 15px;
-        bottom: 8px;
-        font-size: 10px;
-    }    
-    .stars
-    {
-        position: relative;
-        left: 15px;
-        top: 25px;
-
-    }
-    .populaires_cards
-    {
-        padding: 10px;
+        margin: 10px;
+        font-size: 12px;
         padding-left: 5px;
-        width: 100%;
     }
-    .cardpp
-    {
-          
-        width: 260px;
-        height: 125px;
-        margin-left: 5px;
-    }
-    .cardpp img
-    {
-        width: 40%;
-        height: 158px;
-    }
-
-    .cardall img
-    {
-        width: 100%;
-        height: 60%;
-    }
-
-
-
-
-
-
-
 
     /*Style activités*/
-    .cardsactivites
-    {
-        display: flex;
-        flex-direction: column;
-       
-    }
     .activites
     {
-        padding: 13px;
-        width: 100%;
-        
+    padding: 15px;
+    background: none;
+    }
+    .cardsactivites
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
     }
     .cardsactivites .cardtwodouble
     {
         display: flex;
         flex-direction: column;
-        
-        height: 240px;
-        
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
     }
     .cardsactivites .cardfourdouble
     {
         display: flex;
         flex-direction: column;
-        
-        height: 240px;
-           
-    }    
-    
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+    }
     .cardsactivites .card
     {
-        
-        height: 100px;
+        height: 140px;
+        width: 90%;
     }
-    .cardtwodouble .cardtwotop
+
+
+    .cardsactivites .cardtwodouble .cardtwotop
     {
-        height: 50%;
+        height: 180px;
+        width: 90%;
+        
         
     }    
-    .cardtwodouble .cardtwobottom
+    .cardsactivites .cardtwodouble .cardtwobottom
     {
-        height: 50%;
+        height: 180px;
+        width: 90%;
         
     }
+    .cardsactivites .cardfourtop
+    {
+    height: 180px;
+    width: 90%;
     
-    h2
+    }    
+    .cardsactivites .cardfourbottom
     {
-        font-size: 16px;
-       
-        padding-left: 5px;
+        height: 180px;
+        width: 90%; 
     }
-    .titlecard h2
+    .cardsactivites .titlecard h2
     {
-        font-size: 12px;
+        font-size: 11px;
+        margin: 10px;
+        padding-bottom: 10px 
+    }
+    .activites h2
+    {
+        padding-bottom :10px;
+        font-size: 14px;
     }
 
 
@@ -856,24 +1106,26 @@ footer
     {
         display: flex;
         flex-direction: column;
+        background-color: #f2f2f2;
     }
     .charte ul,
     .assistance ul,
     .renseignements ul
     {
-        padding-left: 5px;
-        height: 100px;
+        padding-left: 10px;
+        height: 69px;
     }
     .charte ul
     {
-        padding-bottom: 35px;
+        padding-bottom: 40px;
     }
     .renseignements ul .optiona a,
     .assistance ul .optiona a,
     .charte ul .optiona a
     {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 12px;
+        text-decoration: none;
     }
     .renseignements ul .optionc a,
     .renseignements ul .optionb a,
@@ -883,18 +1135,13 @@ footer
     .charte ul .optionc a,
     .charte ul .optiond a
     {
-        font-size: 13px;
+        font-size: 10px;
     }
  
 }
 
 
 
-/*Style header*/
-@media all and (max-width: 1024px)
-{
-    
-}
 
 
 
