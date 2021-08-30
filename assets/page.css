@@ -712,13 +712,7 @@ footer
         font-size: 17px;
     }
 
-
-
 }
-
-
-
-
 
 
 /* Nouvelles règles si la fenêtre fait moins de 736px de large */
@@ -825,6 +819,10 @@ footer
         color: black;
     }
     .filters .element_filter .search_button
+    {
+        background-color: #0065fc;
+        color: white;
+    }
     
     .search_button
     {
@@ -869,6 +867,7 @@ footer
     .tags .tag i.fa
     {
         font-size: 9px;
+        background-color: #deebff;
     }
     .tag i.fa
     {
@@ -886,6 +885,8 @@ footer
         padding: 0 10px;
         font-size: 10px;
     }
+
+    /*Style infos*/
 
     .infos 
     {
@@ -1045,54 +1046,52 @@ footer
     {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 30px;
+        column-gap: 5px
     }
     .cardsactivites .cardtwodouble
     {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
-        margin-top: 20px;
+        width: 90%;
+        height: 240px;
+        margin-right: 20px;
+        
     }
     .cardsactivites .cardfourdouble
     {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
-        margin-top: 20px;
+        width: 90%;
+        height: 240px;
+        margin-right: 20px;
+       
     }
     .cardsactivites .card
     {
-        height: 140px;
+        height: 120px;
         width: 90%;
-    }
-
-
-    .cardsactivites .cardtwodouble .cardtwotop
-    {
-        height: 180px;
-        width: 90%;
-        
-        
-    }    
-    .cardsactivites .cardtwodouble .cardtwobottom
-    {
-        height: 180px;
-        width: 90%;
+        margin-right: 20px;
         
     }
-    .cardsactivites .cardfourtop
+    .cardtwodouble .cardtwotop
     {
-    height: 180px;
-    width: 90%;
-    
+        height: 50%;  
     }    
-    .cardsactivites .cardfourbottom
+    .cardtwodouble .cardtwobottom
     {
-        height: 180px;
-        width: 90%; 
+        height: 50%;
+        
+    }
+    .cardfourdouble.cardfourtop
+    {
+        height: 50%;
+    }    
+    .cardfourdouble .cardfourbottom
+    {
+        height: 50%;
+        
     }
     .cardsactivites .titlecard h2
     {
