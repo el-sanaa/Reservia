@@ -101,11 +101,14 @@ main
    align-items: center;
    overflow: hidden;
 }
+.filters .element_filter i.fa
+{
+    color: black; 
+}
 .element_filter i.fa 
 {
     padding: 20px 20px;
     background-color: #ccc;
-    
 }
 .search_input
 {
@@ -254,7 +257,7 @@ p
 } 
 .content_text .stars
 {
-    margin-left: 10px;
+    margin-left: 5px;
 }
  
 i.fa:not(.grey)
