@@ -536,6 +536,10 @@ footer
         background-color: #f2f2f2;
         color: black;
     }
+    .filters .icon
+    {
+        display: none;
+    }
     .tags .tag i.fa
     {
         background-color: #f2f2f2;
