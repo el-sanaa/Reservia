@@ -521,15 +521,20 @@ footer
     .filters p
     {
         font-size: 19px;
-        
     }
-
     .element_filter
     {
         width: 50%;
-
     }
-    
+    .filters .element_filter .search_button
+    {
+        background-color: #f2f2f2;
+        color: black;
+    }
+    .tags .tag i.fa
+    {
+        background-color: #f2f2f2;
+    }
     .tags
     {
         height: 48px;
