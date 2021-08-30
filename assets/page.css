@@ -757,12 +757,12 @@ footer
     {
         padding: 35px;
         padding-left: 60px;
-        border-bottom: 2px solid #0065fc;
+        border-bottom: 1px solid #0065fc;
     }
     .navigation ul .link
     {
         padding: 35px;
-        border-bottom: 1px solid #deebff;
+        border-bottom: 1px solid #f2f2f2;
     }    
     .navigation ul .signup
     {
