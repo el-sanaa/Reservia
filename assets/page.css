@@ -252,6 +252,10 @@ p
     margin: 6px;
     
 } 
+.content_text .stars
+{
+    margin-left: 10px;
+}
  
 i.fa:not(.grey)
 {
@@ -831,8 +835,6 @@ footer
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
-        
         font-weight: bold;
         font-size: 11px;
         color: black;
@@ -848,8 +850,6 @@ footer
         margin: 0 15px;
         width: 110px;
         height: 28px;
-        
-
     }
     .tags .titre
     {
