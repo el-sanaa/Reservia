@@ -733,7 +733,7 @@ footer
 
 /* Nouvelles règles si la fenêtre fait moins de 375px de large */
 
-@media screen and (max-width: 375px)
+@media all and (max-width: 375px)
 {
     body
     {
