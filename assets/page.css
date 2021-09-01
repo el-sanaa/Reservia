@@ -45,6 +45,7 @@ header
 {
     padding: 20px 20px;
     border-top: 2px solid #fff;
+    
     text-decoration-line: none;
 }
 
@@ -724,7 +725,7 @@ footer
 }
 
 
-/* Nouvelles règles si la fenêtre fait moins de 736px de large */
+/* Nouvelles règles si la fenêtre fait moins de 375px de large */
 
 @media screen and (max-width: 375px)
 {
@@ -739,39 +740,46 @@ footer
         display: flex;
         flex-direction: row; 
         padding: 5px 15px 10px 5px; 
+        height: 80px;
+        align-items: flex-start;
+    }
+    .logo
+    {
+        padding-top: 15PX;
+        height: 70px;
+        width: 50%;
     }    
     .logo img
     {
         width: 60px;
     }
-    .logo
+    .navigation ul
     {
-        padding: 15px;
-        padding-left: 10px;
-        width: 50%;
-        align-items: center;
-        }
-    .navigation ul 
-    {
-        width: 30%;
-       
-        align-items: center;
+        height: 70px;
+        
+        width: 50%;     
     }
+
+
     .navigation ul .link_option
     {
         margin: 20px 5p 5px 5px;
         border-bottom: 1px solid #0065fc;
+        padding-top: 35px;
     }
     .navigation ul .link
     {
-        
         border-bottom: 1px solid grey;
         margin: 20px 5px 5px 5px;
-    }    
+        padding-top: 15px;
+        padding-right: 10px;
+    }
     .navigation ul .signup
     {
-        margin: 2px 5px 5px 5px;
+        padding: 5px 20px 20px 0;
+        border-top: 2px solid #fff;
     } 
+
     .navigation ul .link a
     {
         color: black;
@@ -783,6 +791,7 @@ footer
         font-size: 10px;
     }
 
+    
     /*Style elements filters*/
     main
     {
@@ -878,6 +887,9 @@ footer
         font-size: 11px;
         color: black;
         padding: 5px;
+        height: 100px;
+        width: 120px;
+        
     }
     .twotag
     {
@@ -890,9 +902,8 @@ footer
         border-radius: 25px;
         display: flex;
         align-items: center;
-        margin: 0 15px 5px 0;
-        width: 110px;
-       
+        margin: 0 15px 10px 0;
+        
     }
     .tags .titre
     {
@@ -930,21 +941,21 @@ footer
         flex-direction: row;
         width: 100%;
         padding: 35px 5px 0 5px;
-        margin: 25px 0 0 0;
+        margin: 10px 0 5px 0;
         height: 70px; 
     }
     .info
     {
         display: flex;
         align-items: flex-start;
-        padding: 25px 10px 10px 10px;
-        
+        padding: 15px 10px 15px 10px;
+             
     }
     .info span
     {
         display: flex;
         align-items: flex-start;
-        width: 90%; 
+        
     }
     .info i
     {
@@ -1094,6 +1105,7 @@ footer
     {
         margin: 10px;
         font-size: 12px;
+        padding-top: 10px;
         padding-left: 5px;
     }
 
