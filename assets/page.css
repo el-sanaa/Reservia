@@ -734,12 +734,11 @@ footer
         margin: auto;
     }
     /*Style header*/
-    
     header
     {
         display: flex;
         flex-direction: row; 
-        margin-right: 20px;      
+        padding: 5px 15px 10px 5px; 
     }    
     .logo img
     {
@@ -750,11 +749,13 @@ footer
         padding: 15px;
         padding-left: 10px;
         width: 50%;
-    }
+        align-items: center;
+        }
     .navigation ul 
     {
-        width: 50%;
-        padding-right: 10px;
+        width: 30%;
+       
+        align-items: center;
     }
     .navigation ul .link_option
     {
@@ -802,50 +803,57 @@ footer
     {
        display: flex;
        border: 1px solid #ccc;
-       border-radius: 20px;
+       border-top-right-radius: 20px;
        width: 90%;
-       height: 45px;
+       height: 35px;
        align-items: center;
        overflow: hidden;
+       border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px; 
+        margin: 5px 10px 5px 5px;
     }
     .element_filter i.fa 
     {
         padding: 20px 20px;
-        background-color: #ccc;
-    }
-    .filters .icon
-    {
-        display: none;
+        background-color: #f2f2f2;
+        margin: 0 20 px 0 0;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px; 
     }
     .search_input
     {
-        border: 1px solid #fff;
-        height: 45px;
-        font-size: 1em;
-        width: 180px; 
+        border: 1px solid #f2f2f2;
+        font-size: 13px;
+        width: 150px; 
         font-weight: bold;
         color: black;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px; 
+
     }
     .filters .element_filter .icon 
     {
         display: flex;
         border: 1px solid #0065fc;
-        background-color: red;
+        background-color: #0065fc;
         font-size: 1em;
         width: 40px;
-        height: 35px;
-        border-end-start-radius: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px; 
         
-    
     }
     .filters .element_filter i.icon
     {
-        color: white;
-
-     }  
+       color: white;
+    }
+    .element_filter .icon
+    {
+        padding: 20px 0 0 0;
+    }  
     .filters
     {
         padding: 5px 5px 5px 5px;
+        width: 100%;
     }
     .filters h2
     {
@@ -862,7 +870,6 @@ footer
          display: none;
     }
     /*Style tags*/
-    
     .tags
     {
         display: flex;
@@ -871,7 +878,11 @@ footer
         font-size: 11px;
         color: black;
         padding: 5px;
-        padding-left: 3px;
+    }
+    .twotag
+    {
+        display: flex;
+        flex-direction: row;
     }
     .tags .tag
     {
@@ -881,20 +892,19 @@ footer
         align-items: center;
         margin: 0 15px 5px 0;
         width: 110px;
-        height: 28px;
-
+       
     }
     .tags .titre
     {
         display: flex;
-        align-items: center;
         font-size: 11px;
+        padding: 5px 5px 5px 0;
+        height: 28px;
     }
         
     .tags .tag i.fa
     {
         font-size: 9px;
-        background-color: #deebff;
     }
     .tag i.fa
     {
@@ -914,24 +924,27 @@ footer
     }
 
     /*Style infos*/
-
-    .infos 
+    .infos
     {
+        display: flex;
+        flex-direction: row;
         width: 100%;
+        padding: 35px 5px 0 5px;
+        margin: 25px 0 0 0;
+        height: 70px; 
     }
     .info
     {
         display: flex;
-        flex-direction: row;
-        padding: 10px;
-        padding-left: 1px;
-        font-size: 13px;
-        width: 100%;
+        align-items: flex-start;
+        padding: 25px 10px 10px 10px;
+        
     }
-    .infos .info i.fa 
-    { 
-        color: black;
-        margin-bottom: 15px;
+    .info span
+    {
+        display: flex;
+        align-items: flex-start;
+        width: 90%; 
     }
     .info i
     {
@@ -940,19 +953,25 @@ footer
         border-radius: 40px;
         border: 1px solid #999;
         margin-right: 5px; 
-
+        align-items: flex-start;
     }
     .infos .info span
     {
        font-size: 10px;
     }
+    .infos .info i.fa 
+    { 
+        color: #0065fc;
+        margin-bottom: 15px;
+    }
+
 
     /*Style hebergements*/
     .hebergements
     {
         display: flex;
         flex-wrap: wrap-reverse;
-        padding: 45px 0 15px 0;
+        padding: 5px 0 15px 0;
         width: 100%;
     }
     .plus_populaires .titrepopulaires i.fa-line-chart
