@@ -746,7 +746,7 @@ footer
     .logo
     {
         padding-top: 15PX;
-        height: 70px;
+        height: 27px;
         width: 50%;
     }    
     .logo img
@@ -756,29 +756,35 @@ footer
     .navigation ul
     {
         height: 70px;
-        
         width: 50%;     
     }
-
-
     .navigation ul .link_option
     {
         margin: 20px 5p 5px 5px;
-        border-bottom: 1px solid #0065fc;
+        border-bottom: 3px solid #0065fc;
         padding-top: 35px;
+        height: 6.8px;
     }
     .navigation ul .link
     {
-        border-bottom: 1px solid grey;
+        border-bottom: 2px solid #f2f2f2;
         margin: 20px 5px 5px 5px;
         padding-top: 15px;
         padding-right: 10px;
     }
+    .navigation .link-option 
+    {
+        display: flex;
+        width: 69.2px;
+        height: 45px; 
+
+    }
     .navigation ul .signup
     {
-        padding: 5px 20px 20px 0;
-        border-top: 2px solid #fff;
+        padding: 5px 15px 20px 0;
+        
     } 
+
 
     .navigation ul .link a
     {
