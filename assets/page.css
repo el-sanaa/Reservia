@@ -794,6 +794,8 @@ footer
         margin-right: 10px;
         width: 330px;
         padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .element_filter
     {
@@ -804,6 +806,8 @@ footer
         height: 52px;
         align-items: center;
         overflow: hidden;
+        margin: 10px;
+        padding: 0;
     }
     .filters .element_filter i.fa
     {
