@@ -180,7 +180,6 @@ main
 {
     display: flex;
     flex-direction: row;
-    
 }    
 .info
 {
@@ -749,7 +748,7 @@ footer
         width: 350px;
         margin-left: 10px;
         margin-right: 10px;
-
+        height: 148px; 
     }
     .logo img
     {
@@ -758,6 +757,8 @@ footer
     .logo
     {
         padding: 15px 0 5px 10px;
+        height: 43px; 
+        width: 100px;
     }
     .navigation ul 
     {
@@ -765,17 +766,41 @@ footer
         grid-template-columns: repeat(3,1fr);
         padding: 5px 5px 5px 5px;
         width: 250px;
+        height: 104px;
     }
 
     .navigation ul .link a
     {
         color: black;
+        
     }
     .navigation ul .link a,
     .navigation ul .signup a,
     .navigation ul .link_option a
     {
         font-size: 17px;
+    }
+    .navigation ul .link
+    {
+        margin-top: 40px;
+        height: 28px;
+        padding: 20px 0 20px 40px;
+        border-bottom: 3px solid #f2f2f2;
+    }
+    .navigation ul .link_option
+    {
+        margin-top: 40px;
+        height: 28px;
+        padding: 20px 0 20px 40px; 
+        
+        border-bottom: 3px solid #0065fc
+    } 
+
+    .navigation ul .signup
+    {
+        padding: 10px 20px 20px 20px;
+        height: 30px;  
+
     }
     /*Style elements filters*/
     main
@@ -787,11 +812,11 @@ footer
     {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .filters
     {
-        margin-left: 10px;
-        margin-right: 10px;
         width: 330px;
         padding: 5px;
         margin-left: 10px;
@@ -806,7 +831,7 @@ footer
         height: 52px;
         align-items: center;
         overflow: hidden;
-        margin: 10px;
+        margin: 30px 10px 10px 10px;
         padding: 0;
     }
     .filters .element_filter i.fa
@@ -815,26 +840,31 @@ footer
     }
     .element_filter i.fa 
     {
-        padding: 20px 20px;
         background-color: #f2f2f2;
+        padding: 20px;
+        height: 17px;
+        width: 12.75px
     }
     .search_input
     {
         border: 1px solid #fff;
         height: 58px;
-        font-size: 1.3em;
-        width: 230px; 
+        font-size: 18px;
+        width: 213px; 
         font-weight: bold;
         color: black;
+        padding: 1px 5px 1px 10px;
     }
     .filters .element_filter i.icon
     {
         display: flex;
         border: 1px solid #0065fc;
         background-color: #0065fc;
-        width: 40px;
-        height: 56px;
-          
+        padding: 20px;
+        height: 17px;
+        width: 12.75px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;         
     }
     .element_filter i.fa 
     {
@@ -849,10 +879,7 @@ footer
     {
        color: white;
     }
-    .element_filter i.icon
-    {
-        padding: 5px;
-    }
+    
     .filters h2
     {
         font-size: 23px;
@@ -862,7 +889,7 @@ footer
         
     }
     .filters p{
-        font-size: 18px;
+        font-size: 17px;
         padding: 5px;
         margin: 5px
     }
@@ -870,9 +897,6 @@ footer
     {
          display: none;
     }
-
-    
-
     /*Style tags*/
     .tags
     {
@@ -881,9 +905,9 @@ footer
         font-weight: bold;
         font-size: 20px;
         color: black;
-        height: 210px;
-        padding: 5px;
-        width: 342px;
+        height: 200px;
+        padding: 5px 5px 0 5px;
+        width: 334px;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -892,6 +916,7 @@ footer
     {
         display: flex;
         flex-direction: row;
+        width: 220px;
     }
     .tags .tag
     {
@@ -900,7 +925,11 @@ footer
         display: flex;
         align-items: center;
         margin: 0 15px 10px 0;
-        
+        width: 220px;
+    }
+    .tag
+    {
+        width: auto;
     }
     .tags .titre
     {
@@ -913,6 +942,7 @@ footer
     .tags .tag i.fa
     {
         font-size: 17px;
+        background-color: #deebff;
     }
     .tag i.fa
     {
