@@ -880,10 +880,8 @@ footer
         font-weight: bold;
         font-size: 20px;
         color: black;
-        padding: 10px;
-        height: 48px;
+        height: 210px;
         padding: 5px;
-        height: 48px;
         width: 342px;
         margin-left: 10px;
         margin-right: 10px;
@@ -937,13 +935,12 @@ footer
     {
         display: flex;
         flex-direction: row;
-        width: 352px;
-        padding: 5px;
         margin-left: 10px;
         margin-right:10px;
-        height: 70px; 
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 40px;
+        width: 340px;
+        padding: 20px 5px 20px 5px;
+        
     }
     .info
     {
@@ -969,7 +966,7 @@ footer
     }
     .infos .info span
     {
-       font-size: 18px;
+       font-size: 16px;
     }
     .infos .info i.fa 
     { 
@@ -983,10 +980,9 @@ footer
     {
         display: flex;
         flex-wrap: wrap-reverse;
-        padding: 5px;
-        width: 350px;
-        margin-left: 10px;
-        margin-right: 10px;
+        padding: 0;
+        margin-top: 10px;
+        
     }
     .plus_populaires .titrepopulaires i.fa-line-chart
     {
@@ -1034,7 +1030,7 @@ footer
     .populaires_cards .cardpp
     {
         
-        height: 110px;
+        height: 150px;
         box-shadow: 0 0 10px #2e2d2d77;
         margin: 5px 5px 5px 5px;
         
@@ -1075,7 +1071,7 @@ footer
     .firstcolumn .cardall,
     .secondcolumn .cardall
     {
-        height: 145px;
+        height: 170px;
         width: 100%;
         box-shadow: 0 0 10px #2e2d2d77;
         margin: 5px 5px 5px 5px;
