@@ -746,7 +746,7 @@ footer
     {
         margin-left: 10px;
         margin-right: 10px;
-        width: 344px;
+        width: 350px;
         margin-left: 10px;
         margin-right: 10px;
 
@@ -764,7 +764,7 @@ footer
         display: grid;
         grid-template-columns: repeat(3,1fr);
         padding: 5px 5px 5px 5px;
-        width: 235px;
+        width: 250px;
     }
 
     .navigation ul .link a
@@ -855,9 +855,10 @@ footer
     }
     .filters h2
     {
-        font-size: 25px;
-        padding: 5px 10px 5px 10px;
+        font-size: 23px;
+        padding: 5px;
         margin: 5px;
+        width: 320px;
         
     }
     .filters p{
@@ -937,9 +938,9 @@ footer
         flex-direction: row;
         margin-left: 10px;
         margin-right:10px;
-        height: 40px;
+        height: 60px;
         width: 340px;
-        padding: 20px 5px 20px 5px;
+        padding: 10px 5px 20px 5px;
         
     }
     .info
