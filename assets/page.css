@@ -549,14 +549,20 @@ footer
     .filters h2
     {
         font-size: 23px;
+        padding-bottom: 5px;
+        margin-bottom: 5px; 
+        
     }
     .filters p
     {
         font-size: 19px;
+        margin-top: 5px;
+        
     }
     .element_filter
     {
         width: 50%;
+        
     }
     .filters .element_filter .search_button
     {
@@ -577,11 +583,17 @@ footer
         font-size: 1em;
         width: 100%;
         color: #0065fc;
+        padding: 20px 0 0 0;    
     }
-
+    .tags .twotag
+    {
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+    }
     .infos
     {
-        padding: 25px;
+        padding: 25px 0;
     }
     .info
     {
@@ -595,31 +607,36 @@ footer
 
     .hebergements
     {
-        padding: 10px;
+        padding: 0;
     }
     .hebergements_marseille
     {
-      background: none; 
-       
+      background: none;
+      padding: 5px; 
     }
-
+    .firstcolumn,
+    .secondcolumn
+    {
+        padding: 5px;
+        margin: 15px;
+        height: 210px;
+    }
     .plus_populaires
     {
-        
+        padding: 5px;
         background: none;
+       
     }
 
     .titrepopulaires h2
     {
-        color: #0065fc;
-        text-decoration-line: underline;
-        font-size: 20px;
+       font-size: 20px;
     }
     .cardall
     {
         width: 30%;
-        height: 225px;
-        box-shadow: 0 0 10px #0065fc;
+        height: 210px;
+        box-shadow: 0 0 10px #2e2d2d77;
     }
     .Afficher_plus
     {
@@ -683,16 +700,24 @@ footer
     {
         margin-bottom: 30px;
         width:  95%;
-        height: 146px;
+        height: 130px;
         box-shadow: 0 0 10px #0065fc;
         margin-left: 10px;
     }
     
     /*Style activites*/
+    .cardsactivites
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 5px;
+        padding-bottom: 25px;
+    }
     .activites
     {
         background-color: #deebff;
         width: 100%;
+        padding: 0;
                       
     }
 
@@ -702,6 +727,8 @@ footer
     {
         height: 280px;
         width: 180px;
+        margin: 0 auto;
+
         
     }
     
@@ -750,7 +777,583 @@ footer
 
 }
 
+/* Nouvelles règles si la fenêtre fait entre 376px de large et 767px de large*/
+@media all and (min-width: 376px) and (max-width: 767px)
+{    
+    body
+    {
+        width: 100%;
+        margin: auto;
+    }
+    /*Style header*/
+    
+    header
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 747px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 148px; 
+    }
+    .logo img
+    {
+        width: 100px;
+    }
+    .logo
+    {
+        padding: 15px 0 5px 10px;
+        height: 43px; 
+        width: 100px;
+    }
+    .navigation ul 
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 5px 5px 5px 5px;
+        width: 230px;
+        height: 104px;
+    }
 
+    .navigation ul .link a
+    {
+        color: black;
+        
+    }
+    .navigation ul .link a,
+    .navigation ul .signup a,
+    .navigation ul .link_option a
+    {
+        font-size: 17px;
+    }
+    .navigation ul .link
+    {
+        margin-top: 40px;
+        height: 28px;
+        padding: 20px 0 20px 40px;
+        border-bottom: 3px solid #f2f2f2;
+    }
+    .navigation ul .link_option
+    {
+        margin-top: 40px;
+        height: 28px;
+        padding: 20px 0 20px 40px; 
+        
+        border-bottom: 3px solid #0065fc
+    } 
+
+    .navigation ul .signup
+    {
+        padding: 10px 20px 20px 20px;
+        height: 30px;  
+
+    }
+    /*Style elements filters*/
+    main
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #main_header
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .filters
+    {
+        height: 170px;
+        width: 737px;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .element_filter
+    {
+        display: flex;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        width: 320px;
+        height: 52px;
+        align-items: center;
+        overflow: hidden;
+        margin: 30px 10px 10px 10px;
+        padding: 0;
+    }
+    .filters .element_filter i.fa
+    {
+        color: black; 
+    }
+    .element_filter i.fa 
+    {
+        background-color: #f2f2f2;
+        padding: 20px;
+        height: 17px;
+        width: 12.75px
+    }
+    .search_input
+    {
+        border: 1px solid #fff;
+        height: 58px;
+        font-size: 18px;
+        width: 213px; 
+        font-weight: bold;
+        color: black;
+        padding: 1px 5px 1px 10px;
+    }
+    .filters .element_filter i.icon
+    {
+        display: flex;
+        border: 1px solid #0065fc;
+        background-color: #0065fc;
+        padding: 20px;
+        height: 17px;
+        width: 12.75px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;         
+    }
+    .element_filter i.fa 
+    {
+       background-color: #f2f2f2;
+    }
+    .filters .element_filter i.fa
+    {
+        color: black;
+        font-size: 17px;
+    }
+    .filters .element_filter i.icon
+    {
+       color: white;
+    }
+    
+    .filters h2
+    {
+        font-size: 23px;
+        padding: 5px;
+        margin: 5px;
+        width: 320px;
+        
+    }
+    .filters p{
+        font-size: 17px;
+        padding: 5px;
+        margin: 5px
+    }
+    .search_button
+    {
+         display: none;
+    }
+    /*Style tags*/
+    .tags
+    {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        height: 200px;
+        padding: 20px 10px 15px 5px;
+        width: 334px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .twotag
+    {
+        display: flex;
+        flex-direction: row;
+        width: 220px;
+    }
+    .onetag
+    {
+        display: flex;
+        width: 100px;
+    }
+    .onetags
+    {
+        display: flex;
+    }
+    .tags .tag
+    {
+        border: 1px solid #999;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        margin: 0 15px 10px 0;
+        width: 220px;
+    }
+    .tag
+    {
+        width: auto;
+    }
+    .tags .titre
+    {
+        display: flex;
+        font-size: 19px;
+        padding: 5px 5px 5px 0;
+        height: 28px;
+    }
+        
+    .tags .tag i.fa
+    {
+        font-size: 17px;
+        background-color: #deebff;
+    }
+    .tag i.fa
+    {
+        color: #0065fc;
+        border-radius: 50px;
+        width: 41px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        background-color: #deebff;
+    }
+    .tag span
+    {
+        padding: 0 10px;
+        font-size: 17px;
+    }
+
+    /*Style infos*/
+    .infos
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        margin-right:10px;
+        height: 60px;
+        width: 340px;
+        padding: 10px 5px 20px 5px;
+        
+    }
+    .info
+    {
+        display: flex;
+        align-items: flex-start;
+        padding: 15px 10px 15px 10px;
+             
+    }
+    .info span
+    {
+        display: flex;
+        align-items: flex-start;
+        
+    }
+    .info i
+    {
+        display: flex;
+        padding: 5px;
+        border-radius: 40px;
+        border: 1px solid #999;
+        margin-right: 5px; 
+        align-items: flex-start;
+    }
+    .infos .info span
+    {
+       font-size: 16px;
+    }
+    .infos .info i.fa 
+    { 
+        color: #0065fc;
+        margin-bottom: 15px;
+    }
+
+
+    /*Style hebergements*/
+    .hebergements
+    {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 0;
+        margin-top: 10px;
+        width: 375px;
+    }
+    .plus_populaires .titrepopulaires i.fa-line-chart
+    {
+        color: black;
+        font-size: 23px;
+        padding-top: 15px;
+        padding-right: 10px;
+    }
+    .plus_populaires h2
+    {
+        color: black;
+        text-decoration: none;
+        font-size: 23px;
+        padding-left: 10px;
+
+    }
+    .content_textpp h4
+    {
+        position: relative;
+        left: 15px;
+        bottom: 6px;
+        font-size: 15px;
+
+    }
+    .content_textpp p
+    {
+        position: relative;
+        left: 15px;
+        bottom: 8px;
+        font-size: 12px;
+    }    
+    .stars
+    {
+        position: relative;
+        left: 15px;
+        top: 25px;
+
+    }
+    .populaires_cards
+    {
+        padding: 10px;
+        width: 335;
+        margin: 5px;       
+    }
+    .populaires_cards .cardpp
+    {
+        
+        height: 150px;
+        box-shadow: 0 0 10px #2e2d2d77;
+        margin: 5px 5px 5px 5px;
+        
+        
+    }
+    .plus_populaires
+    {
+         
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 0;
+        padding: 5px 5px 5px 5px;
+        
+    }
+    
+    .hebergements_marseille
+    {
+        width: 100%;
+        background: none;
+        padding: 5px 5px 5px 5px;
+    }
+    .hebergements_marseille .firstcolumn
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 5px 0 5px;
+        width: 335px;
+        margin: 10px 10px 5px 10px;
+        
+    }
+    .hebergements_marseille .secondcolumn
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 5px 0 5px;
+        width: 335px; 
+        margin: 10px 10px 5px 10px;
+    }
+    .firstcolumn .cardall,
+    .secondcolumn .cardall
+    {
+        height: 170px;
+        width: 318px;
+        box-shadow: 0 0 10px #2e2d2d77;
+        margin: 5px 5px 5px 5px;
+    }
+    .hebergements_marseille h2
+    {
+        padding: 1px;
+        font-size: 23px;
+    } 
+    .content_text h4
+    {
+        font-size: 15px;
+        margin: 6px;
+        padding: 5x;
+    }
+    .content_text p
+    {
+        margin: 6px;
+        font-size: 12px;
+    } 
+    i.fa:not(.grey)
+    {
+        color: #0065fc; 
+        font-size: 9px;   
+    }
+    i.fa
+    {
+        font-size: 9px;
+    }
+    .hebergements_marseille h5
+    {
+        margin: 10px;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+
+    /*Style activités*/
+    .activites
+    {
+       padding: 5px;
+       width:350px; 
+       background: none;
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+    .cardsactivites
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 30px;
+        padding: 5px;
+        
+    }
+    .cardsactivites .cardtwodouble
+    {
+        height: 370px;
+        width: 320px;
+        margin: 0 0 5px 0;
+        padding: 5px;
+         
+    }    
+    .cardsactivites .cardfourdouble
+    {
+        height: 370px;
+        width: 320px;
+        margin: 0 0 5px 0;
+        padding: 5px;
+        
+    }    
+    
+    .activites .cardsactivites .card
+    {
+        height: 185px;
+        width: 320px;
+        margin: 0 5px 5px 5px;
+        
+        
+    }
+    .card,
+    .cardtwotop,
+    .cardtwobottom,
+    .cardfourtop, 
+    .cardfourbottom
+    {
+        border-radius: 20px;
+        border: 2px solid white;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0 0 10px #2e2d2d77;
+        
+    } 
+    .cardfourdouble .cardfourtop,
+    .cardfourdouble .cardfourbottom, 
+    .cardtwodouble .cardtwobottom,
+    .cardtwodouble .cardtwotop
+    {
+        height: 185px;
+        margin: 0 0 10px 0;
+    }    
+    .card img
+    {
+        width: 100%;
+        height: 70%;
+    }
+    .cardtwotop img
+    {
+        width: 100%;
+        height: 70%;
+    }
+    .cardtwobottom img
+    {
+        width: 100%;
+        height: 70%;
+    }
+    .cardfourtop img
+    {
+        width: 100%;
+        height: 70%;
+    }
+    .cardfourbottom img
+    {
+        width: 100%;
+        height: 70%;
+    }
+    
+    
+
+    .cardsactivites .titlecard h2
+    {
+        font-size: 15px;
+        margin: 10px;
+        padding-bottom: 10px 
+    }
+    .activites h2
+    {
+        padding-bottom :10px;
+        font-size: 23px;
+    }
+
+
+
+    /*Style footer*/
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        width: 100%;
+        margin-top: 10px;
+        padding: 30px 20px;
+        height: 440px;
+    }
+    .renseignements ul
+    {
+        padding-left: 10px;
+        height: 75px;
+    }
+
+    .charte ul
+    {
+        padding-left: 10px;
+        height: 75px;
+        padding-bottom: 50px;
+
+    }
+    .assistance ul
+    {
+        padding-left: 10px;
+        height: 75px;
+    }
+    
+    .renseignements ul .optiona a,
+    .assistance ul .optiona a,
+    .charte ul .optiona a
+    {
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .renseignements ul .optionc a,
+    .renseignements ul .optionb a,
+    .assistance ul .optionb a,
+    .assistance ul .optionc a,
+    .charte ul .optionb a,
+    .charte ul .optionc a,
+    .charte ul .optiond a
+    {
+        font-size: 16px;
+    }
+ 
+
+}
 /* Nouvelles règles si la fenêtre fait maximum 375px de large */
 
 @media all and (max-width: 375px)
