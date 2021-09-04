@@ -105,6 +105,7 @@ main
 .filters .element_filter i.fa
 {
     color: black; 
+    font-size: 19px;
 }
 .element_filter i.fa 
 {
@@ -123,6 +124,7 @@ main
     width: 250px; 
     font-weight: bold;
     color: black;
+    padding-left: 15px;
 }
 .search_button
 {
@@ -141,7 +143,7 @@ main
     padding: 20px 10px 15px 0;
     height: 48px;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 25px;
 }
 .tags .tag
 {
@@ -150,6 +152,7 @@ main
     display: flex;
     align-items: center;
     margin: 0 15px;
+    height: 48px;
 }
 .tags .titre
 {
@@ -160,17 +163,25 @@ main
 {
     color: #0065fc;
     border-radius: 50px;
-    width: 41px;
-    height: 42px;
     display: flex;
     align-items: center;
     margin-left: 0px;
     background-color: #deebff;
+    height: 48px;
+    width: 48px;
+    border: 1px solid #deebff;
+    font-size: 20px;
 }
 .tags i.fa
 {
     justify-content: center;
 }
+i.fa:not(.grey)
+{
+    color: #0065fc;
+    font-size: 16px;
+}
+
 .tag span
 {
     padding: 0 20px;
@@ -180,6 +191,7 @@ main
 {
     display: flex;
     flex-direction: row;
+    font-size: 25px;
 }    
 .info
 {
@@ -510,9 +522,9 @@ footer
  
 
 
-/* Nouvelles règles si la fenêtre fait max de large 1024px de large */
+/* Nouvelles règles si la fenêtre fait entre 768px de large et 1024px de large */
 /* Style header */
-@media all and (max-width: 1024px)
+@media all and (min-width: 768px) and (max-width: 1024px)
 {
     body
     {
@@ -520,6 +532,15 @@ footer
         height: auto;
     }
 
+    .header
+    {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    
     .navigation ul .link a
     {
         color: #0065fc;
@@ -730,7 +751,7 @@ footer
 }
 
 
-/* Nouvelles règles si la fenêtre fait moins de 375px de large */
+/* Nouvelles règles si la fenêtre fait maximum 375px de large */
 
 @media all and (max-width: 375px)
 {
@@ -765,7 +786,7 @@ footer
         display: grid;
         grid-template-columns: repeat(3,1fr);
         padding: 5px 5px 5px 5px;
-        width: 250px;
+        width: 230px;
         height: 104px;
     }
 
@@ -817,6 +838,7 @@ footer
     }
     .filters
     {
+        height: 170px;
         width: 330px;
         padding: 5px;
         margin-left: 10px;
@@ -906,7 +928,7 @@ footer
         font-size: 20px;
         color: black;
         height: 200px;
-        padding: 20px 10px 15px 0px;
+        padding: 20px 10px 15px 5px;
         width: 334px;
         margin-left: 10px;
         margin-right: 10px;
@@ -922,6 +944,10 @@ footer
     {
         display: flex;
         width: 100px;
+    }
+    .onetags
+    {
+        display: flex;
     }
     .tags .tag
     {
@@ -1018,7 +1044,7 @@ footer
         flex-wrap: wrap-reverse;
         padding: 0;
         margin-top: 10px;
-        
+        width: 375px;
     }
     .plus_populaires .titrepopulaires i.fa-line-chart
     {
@@ -1059,9 +1085,9 @@ footer
     }
     .populaires_cards
     {
-        padding: 5px;
-        padding: 5px 5px 5px 5px;
-        width: 95%;       
+        padding: 10px;
+        width: 335;
+        margin: 5px;       
     }
     .populaires_cards .cardpp
     {
@@ -1069,6 +1095,7 @@ footer
         height: 150px;
         box-shadow: 0 0 10px #2e2d2d77;
         margin: 5px 5px 5px 5px;
+        
         
     }
     .plus_populaires
@@ -1092,7 +1119,8 @@ footer
         display: flex;
         flex-direction: column;
         padding: 10px 5px 0 5px;
-        width: 90%;
+        width: 335px;
+        margin: 10px 10px 5px 10px;
         
     }
     .hebergements_marseille .secondcolumn
@@ -1100,15 +1128,14 @@ footer
         display: flex;
         flex-direction: column;
         padding: 0px 5px 0 5px;
-        width: 90%; 
-         
-        
+        width: 335px; 
+        margin: 10px 10px 5px 10px;
     }
     .firstcolumn .cardall,
     .secondcolumn .cardall
     {
         height: 170px;
-        width: 100%;
+        width: 318px;
         box-shadow: 0 0 10px #2e2d2d77;
         margin: 5px 5px 5px 5px;
     }
