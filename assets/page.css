@@ -522,7 +522,7 @@ footer
  
 
 /*media queries*/
-/*media devices medium and large*/
+/*media devices medium and large for phone and tablet */
 /* Apply styles starting from medium devices and up to large devices */
 @media (min-width: 982px) and (max-width: 1023.98px)
 {
@@ -565,7 +565,7 @@ footer
     }
     .filters .element_filter .search_button
     {
-        background-color: #f2f2f2;
+        background-color: #deebff;
         color: black;
     }
     .filters .icon
@@ -777,9 +777,9 @@ footer
 }
 
 /*media queries*/
-/* extra small and small devices (portrait phones)*/
-/* Apply styles starting from extra small devices and up to small devices*/
-@media (min-width: 375px) and (max-width: 575.98px) 
+/* extra small devices (portrait phones)*/
+/* Apply styles for extra small devices*/
+@media (max-width: 375px)
 
 {
     body
@@ -1159,14 +1159,14 @@ footer
     } 
     .content_text h4
     {
-        font-size: 15px;
+        font-size: 13px;
         margin: 6px;
         padding: 5x;
     }
     .content_text p
     {
         margin: 6px;
-        font-size: 12px;
+        font-size: 11px;
     } 
     i.fa:not(.grey)
     {
