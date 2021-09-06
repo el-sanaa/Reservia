@@ -114,7 +114,7 @@ main
 .element_filter i.fa:hover
 {
     color: #0065fc;
-    background-color: #0065fc;
+    background-color: white;
 }
 .search_button:hover
 {
@@ -518,7 +518,6 @@ h5
     transform: scale(1.1);
 
 }
-
 /*footer*/
 footer 
 {
@@ -575,7 +574,7 @@ footer
 /*media queries*/
 /*media devices medium and large for phone and tablet */
 /* Apply styles starting from medium devices and up to large devices */
-@media (min-width: 982px) and (max-width: 1023.98px)
+@media (min-width: 651px) and (max-width: 1023.98px)
 {
     body
     {
@@ -589,13 +588,10 @@ footer
         margin-top: 10px;
         padding-bottom: 20px;
     }
-    
-    
     .navigation ul .link a
     {
         color: #0065fc;
     }
-
     .filters h2
     {
         font-size: 23px;
@@ -611,35 +607,102 @@ footer
     }
     .element_filter
     {
-        width: 50%;
-        
+        width: 400px;
     }
     .filters .element_filter .search_button
     {
-        background-color: #deebff;
-        color: black;
-    }
-    .filters .icon
-    {
         display: none;
     }
+    .filters .element_filter i.icon
+    {
+        display: flex;
+        border: 1px solid #0065fc;
+        background-color: #0065fc;
+        padding: 40px;
+        height: 17px;
+        width: auto;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px; 
+    }
+    .icon:hover
+    {
+        color: #0065fc;
+        background-color: white;
+    } 
+
     .tags .tag i.fa
     {
         background-color: #f2f2f2;
     }
     .tags
     {
-        height: 48px;
-        font-size: 1em;
-        width: 100%;
-        color: #0065fc;
-        padding: 20px 0 0 0;    
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        height: 200px;
+        padding: 20px 10px 15px 5px;
+        width: 334px;
+        margin-left: 0;
+        margin-right: 10px;
     }
-    .tags .twotag
+    .twotag
     {
         display: flex;
         flex-direction: row;
-        font-size: 1em;
+        width: 220px;
+    }
+    .onetag
+    {
+        display: flex;
+        width: 100px;
+    }
+    .onetags
+    {
+        display: flex;
+    }
+    .tags .tag
+    {
+        border: 1px solid #999;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        margin: 0 15px 10px 0;
+        width: 222px;
+    }
+    .tag
+    {
+        width: auto;
+    }
+    .tags .titre
+    {
+        display: flex;
+        font-size: 19px;
+        padding: 5px 5px 5px 0;
+        height: 28px;
+    }
+        
+    .tags .tag i.fa
+    {
+        font-size: 17px;
+        background-color: #deebff;
+    }
+    .tag i.fa
+    {
+        color: #0065fc;
+        border-radius: 50px;
+        width: 47px;
+        height: 47px;
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        background-color: #deebff;
+    }
+    .tag span
+    {
+        padding: 0 10px;
+        font-size: 17px;
     }
     .infos
     {
@@ -654,16 +717,16 @@ footer
     {
         color: #0065fc;
     }
-
     .hebergements
     {
         padding: 0;
+        flex-wrap: wrap;
     }
     .hebergements_marseille
     {
-      background: none;
-      padding: 5px; 
-    }
+      padding: 5px;
+      width: 100%; 
+          }
     .firstcolumn,
     .secondcolumn
     {
@@ -673,14 +736,9 @@ footer
     }
     .plus_populaires
     {
-        padding: 5px;
+        padding: 5px 6% 5px 11%;
         background: none;
-       
-    }
-
-    .titrepopulaires h2
-    {
-       font-size: 20px;
+        width: 80%;
     }
     .cardall
     {
@@ -694,74 +752,27 @@ footer
         font-size: 13px;
         font-weight: bold;
     }
-    p
+    .cardpp img
     {
-        font-weight: normal;
-        font-size: 13px;
+        width: 60%;
     }
-    .content_text h4
-    {
-        font-size: 12px;
-        margin: 5px;
-    }
-    .content_text 
     
-    {
-        margin: 5px;
-        font-size: 12px;
-        
-    } 
-     
-    i.fa:not(.grey)
-    {
-        color: #0065fc; 
-        font-size: 12px;   
-    }
-    i.fa
-    {
-        font-size: 12px;
-    }
-           
     .plus_populaires i.fa-line-chart
     {
-        color: black;
+        color: #0065fc;
         font-size: 25px;
-        padding-top: 20px;
+        padding-top: 40px;
+        padding-right: 40px;
     }
-    .content_textpp h4
-    {
-       position: relative;
-       left: 15px;
-       font-size: 13px;
-    }
-    .content_textpp p
-    {
-        position: relative;
-        left: 15px;
-        font-size: 12px;
-    }    
-    .stars
-    {
-        position: relative;
-        left: 15px;
-        top: 13px;
-    }
-    .cardpp
-    {
-        margin-bottom: 30px;
-        width:  95%;
-        height: 130px;
-        box-shadow: 0 0 10px #0065fc;
-        margin-left: 10px;
-    }
-    
+       
     /*Style activites*/
     .cardsactivites
     {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 5px;
-        padding-bottom: 25px;
+        padding-bottom: 10px;
+        margin: 5px 10px 5px 10px;
     }
     .activites
     {
@@ -776,10 +787,8 @@ footer
     .activites .card
     {
         height: 280px;
-        width: 180px;
+        width: auto;
         margin: 0 auto;
-
-        
     }
     
     /*Style footer*/
@@ -827,10 +836,11 @@ footer
 
 }
 
+
 /*media queries*/
 /* extra small devices (portrait phones)*/
 /* Apply styles for extra small devices*/
-@media (max-width: 375px)
+@media (max-width: 650px)
 
 {
     body
@@ -1017,7 +1027,6 @@ footer
         margin-left: 10px;
         margin-right: 10px;
     }
-
     .twotag
     {
         display: flex;
