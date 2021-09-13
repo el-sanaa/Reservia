@@ -574,13 +574,45 @@ footer
 }
  
 /*media queries*/
-/*media devices medium and large for phone and tablet */
-/* Apply styles starting from medium devices and up to large devices */
-@media (min-width: 1025px) and (max-width: 1429.98px)
+/*media devices xlarge */
+/* Apply styles starting from xlarge devices and up to xlarge devices */
+@media (min-width: 1024px) and (max-width: 1429.98px)
 {
-    
+   body
+   {
+       width: 100%;
+       height: auto;
+   }  
+   .element_filter
+   {
+       display: flex;
+       width: 50%;
+   }  
+   .tags
+   {
+       font-size: 16px;
+   }
+   .tags .twotag
+   {
+       font-size: 16px;
+   }
+   .element_filter
+   {
+       width: max-content;
+   }
+   .content_text p,
+   .content_textpp p
+   {
+        font-size: 11px;
+   }
+   .content_text h4,
+   .content_textpp h4,
+   .titlecard h2
+   {
+       font-size: 13px;
+   }
+   
 }
-
 
 /*media queries*/
 /*media devices medium and large for phone and tablet */
@@ -861,7 +893,7 @@ footer
     .charte ul .optiona a
     {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 17px;
         text-decoration: underline;
     }
     .renseignements ul .optionc a,
@@ -872,7 +904,7 @@ footer
     .charte ul .optionc a,
     .charte ul .optiond a
     {
-        font-size: 17px;
+        font-size: 15px;
     }
 
 }
