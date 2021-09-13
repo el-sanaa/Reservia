@@ -311,6 +311,9 @@ i.fa
 }
 
 /*Style partie plus populaires*/
+.cartes{
+    object-fit: cover;
+}
 .plus_populaires
 {
     width: 29%;
@@ -570,6 +573,14 @@ footer
     font-size: 18px;
 }
  
+/*media queries*/
+/*media devices medium and large for phone and tablet */
+/* Apply styles starting from medium devices and up to large devices */
+@media (min-width: 1025px) and (max-width: 1429.98px)
+{
+    
+}
+
 
 /*media queries*/
 /*media devices medium and large for phone and tablet */
@@ -781,15 +792,45 @@ footer
         padding: 0;
                       
     }
+        .card img
+    {
+        width: 100%;
+        height: 85%;
+    }
+    .cardtwotop img
+    {
+        width: 100%;
+        height: 78%;
+    }
+    .cardtwobottom img
+    {
+        width: 100%;
+        height: 68%;
+    }
+    .cardfourtop img
+    {
+        width: 100%;
+        height: 68%;
+    }
+    .cardfourbottom img
+    {
+        width: 100%;
+        height: 68%;
+    }
 
     .activites .cardtwodouble,
     .activites .cardfourdouble,
     .activites .card
     {
-        height: 280px;
-        width: auto;
+        height: 260px;
+        width: 140px;
         margin: 0 auto;
     }
+    .titlecard h2 {
+        font-size: 11px;
+        margin: 5px;
+        padding-bottom: 10px;
+    }    
     
     /*Style footer*/
     footer 
