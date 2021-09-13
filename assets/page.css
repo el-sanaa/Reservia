@@ -208,7 +208,7 @@ i.fa:not(.grey)
     flex-direction: row;
     font-size: 25px;
 } 
-.info
+.infos
 {
     display: flex;
     flex-direction: row;
@@ -216,11 +216,11 @@ i.fa:not(.grey)
     padding-left: 0px;
     font-size: 19px;
 }
-.infos .info i.fa 
+.infos i.fa 
 { 
    color: black;
 }
-.info i
+.infos i
 {
     display: flex;
     padding: 5px;
@@ -228,7 +228,7 @@ i.fa:not(.grey)
     border: 1px solid #999;
     margin-right: 10px; 
 }
-.info span
+.infos span
 {
     display: flex;
     align-items: center;
@@ -295,7 +295,7 @@ p
     margin: 6px;
     
 } 
-.content_text .stars
+.content_text .star
 {
     margin-left: 5px;
 }
@@ -708,12 +708,12 @@ footer
     {
         padding: 25px 0;
     }
-    .info
+    .infos
     {
         font-size: 18px;
     }
 
-    .infos .info i.fa
+    .infos i.fa
     {
         color: #0065fc;
     }
@@ -912,7 +912,7 @@ footer
         height: 30px;  
 
     }
-    
+
     /*Style elements filters*/
     main
     {
@@ -1098,20 +1098,20 @@ footer
         padding: 10px 5px 20px 5px;
         
     }
-    .info
+    .infos
     {
         display: flex;
         align-items: flex-start;
         padding: 15px 10px 15px 10px;
         margin: 10px 0 0 0;     
     }
-    .info span
+    .infos span
     {
         display: flex;
         align-items: flex-start;
         
     }
-    .info i
+    .infos i
     {
         display: flex;
         padding: 5px;
@@ -1120,11 +1120,11 @@ footer
         margin-right: 5px; 
         align-items: flex-start;
     }
-    .infos .info span
+    .infos span
     {
        font-size: 16px;
     }
-    .infos .info i.fa 
+    .infos i.fa 
     { 
         color: #0065fc;
         margin-bottom: 15px;
@@ -1144,15 +1144,17 @@ footer
     {
         color: black;
         font-size: 23px;
-        padding-top: 15px;
+        padding-top: 20px;
         padding-right: 10px;
     }
+
     .plus_populaires h2
     {
         color: black;
         text-decoration: none;
         font-size: 23px;
         padding-left: 10px;
+        margin-bottom: 0;
     }
     .content_textpp h4
     {
@@ -1172,20 +1174,20 @@ footer
     {
         position: relative;
         left: 15px;
-        top: 25px;
+        top: 0;
     }
     .populaires_cards
     {
-        padding: 10px;
+        padding: 0 10px 10px 10px;
         width: 335;
-        margin: 5px;       
+        margin: 0 5px 5px 5px;       
     }
     .populaires_cards .cardpp
     {
         
-        height: 150px;
+        height: 130px;
         box-shadow: 0 0 10px #2e2d2d77;
-        margin: 5px 5px 5px 5px;
+        margin: 5px 5px 10px 5px;
     }
     .plus_populaires
     {
@@ -1201,14 +1203,24 @@ footer
         background: none;
         padding: 5px 5px 5px 5px;
     }
-    .hebergements_marseille .firstcolumn,
     .hebergements_marseille .secondcolumn
     {
+    
         display: flex;
         flex-direction: column;
         padding: 0px 5px 0 5px;
         width: 335px; 
-        margin: 10px 10px 5px 10px;
+        margin: 0px 10px 5px 10px;
+        height: auto;
+        
+    }
+    .hebergements_marseille .firstcolumn
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 5px 0 5px;
+        width: 335px; 
+        margin: 0px 10px 0 10px;
         height: auto;
     }
     .firstcolumn .cardall,
@@ -1217,12 +1229,14 @@ footer
         height: 170px;
         width: 318px;
         box-shadow: 0 0 10px #2e2d2d77;
-        margin: 5px 5px 5px 5px;
+        margin: 5px 5px 10px 5px;
     }
     .hebergements_marseille h2
     {
-        padding: 1px;
+        padding-left: 10px;
         font-size: 23px;
+        margin-bottom: 0;
+        padding-bottom: 0px;
     } 
     .content_text h4
     {
@@ -1251,6 +1265,12 @@ footer
         padding-top: 10px;
         padding-left: 5px;
     }
+    .content_text .star
+    {
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
 
     /*Style activités*/
     .activites
@@ -1273,7 +1293,7 @@ footer
     {
         height: 370px;
         width: 320px;
-        margin: 0 0 5px 0;
+        margin: 0 0 0 0;
         padding: 5px;
          
     }    
@@ -1281,7 +1301,7 @@ footer
     {
         height: 370px;
         width: 320px;
-        margin: 0 0 5px 0;
+        margin: 0 0 10px 0;
         padding: 5px;
         
     }    
@@ -1290,9 +1310,8 @@ footer
     {
         height: 185px;
         width: 320px;
-        margin: 0 5px 5px 5px;
-        
-        
+        margin: 0 5px 10px 5px;
+  
     }
     .card,
     .cardtwotop,
@@ -1341,8 +1360,6 @@ footer
         height: 70%;
     }
     
-    
-
     .cardsactivites .titlecard h2
     {
         font-size: 15px;
@@ -1355,10 +1372,7 @@ footer
         font-size: 23px;
     }
 
-
-
     /*Style footer*/
-
     footer
     {
         display: flex;
