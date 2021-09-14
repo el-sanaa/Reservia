@@ -617,7 +617,7 @@ footer
 /*media queries*/
 /*media devices medium and large for phone and tablet */
 /* Apply styles starting from medium devices and up to large devices */
-@media (min-width: 651px) and (max-width: 1023.98px)
+@media (min-width: 650px) and (max-width: 1023.98px)
 {
     body
     {
@@ -759,6 +759,23 @@ footer
     .infos i.fa
     {
         color: #0065fc;
+    }
+    .content_text h4
+    {
+        font-size: 14px;
+    }
+    .content_text
+    {
+        font-size: 11px;
+    }
+    i.fa:not(.grey)
+    {
+        color: #0065fc; 
+        font-size: 11px;   
+    }
+    i.fa
+    {
+        font-size: 11px;
     }
     .hebergements
     {
@@ -909,11 +926,615 @@ footer
 
 }
 
+/*media queries*/
+/* small devices (portrait phones)*/
+/* Apply styles for small devices*/
+@media (min-width: 364px) and (max-width: 648.98px)
+{
+    body
+    {
+        width: 100%;
+        margin: auto;
+    }
+    /*Style header*/
+    
+    header
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 350px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 148px; 
+    }
+    .logo img
+    {
+        width: 100px;
+    }
+    .logo
+    {
+        padding: 15px 0 5px 10px;
+        height: 43px; 
+        width: 100px;
+    }
+    .navigation ul 
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 5px 5px 5px 5px;
+        width: 230px;
+        height: 104px;
+    }
+
+    .navigation ul .link a
+    {
+        color: black;
+        
+    }
+    .navigation ul .link a,
+    .navigation ul .signup a,
+    .navigation ul .link_option a
+    {
+        font-size: 17px;
+    }
+    .navigation ul .link
+    {
+        margin-top: 40px;
+        height: 28px;
+        padding: 20px 0 20px 40px;
+        border-bottom: 3px solid #f2f2f2;
+        width: 25px;
+    }
+    .navigation ul .link_option
+    {
+        margin-top: 40px;
+        height: 28px;
+        padding: 20px 0 20px 40px; 
+        width: 135px;
+        border-bottom: 3px solid #0065fc
+    } 
+
+    .navigation ul .signup
+    {
+        padding: 10px 20px 20px 20px;
+        height: 78px;  
+        border-bottom: 3px solid #f2f2f2;
+
+    }
+        /*Style elements filters*/
+        main
+        {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+        #main_header
+        {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .filters
+        {
+            height: 170px;
+            width: auto;
+            padding: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .element_filter
+        {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            width: 320px;
+            height: 52px;
+            align-items: center;
+            overflow: hidden;
+            margin: 30px 10px 10px 10px;
+            padding: 0;
+        }
+        .filters .element_filter i.fa
+        {
+            color: black; 
+        }
+        .element_filter i.fa 
+        {
+            background-color: #f2f2f2;
+            padding: 20px;
+            height: 17px;
+            width: 12.75px
+        }
+        .search_input
+        {
+            border: 1px solid #fff;
+            height: 58px;
+            font-size: 18px;
+            width: 213px; 
+            font-weight: bold;
+            color: black;
+            padding: 1px 5px 1px 10px;
+        }
+        .filters .element_filter i.icon
+        {
+            display: flex;
+            border: 1px solid #0065fc;
+            background-color: #0065fc;
+            padding: 20px;
+            height: 17px;
+            width: 12.75px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;         
+        }
+        .element_filter i.fa 
+        {
+           background-color: #f2f2f2;
+        }
+        .filters .element_filter i.fa
+        {
+            color: black;
+            font-size: 17px;
+        }
+        .filters .element_filter i.icon
+        {
+           color: white;
+        }
+        
+        .filters h2
+        {
+            font-size: 22px;
+            padding: 5px;
+            margin: 5px;
+            width: auto;
+            
+        }
+        .filters p{
+            font-size: 17px;
+            padding: 5px;
+            margin: 5px
+        }
+        .search_button
+        {
+             display: none;
+        }
+        .filters .element_filter i.icon:hover
+        {
+            color:#f2f2f2;
+            background-color: #f2f2f2;
+        }
+        /*Style tags*/
+        .tags
+        {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 10px 0 0;
+            height: auto;
+            font-weight: bold;
+            font-size: 25px;
+            margin-left: 10px;
+            width: auto;
+        }
+              
+        
+        .twotag
+        {
+            display: flex;
+            flex-direction: row;
+            width: 220px;
+        }
+        .onetag
+        {
+            display: flex;
+            width: 100px;
+        }
+        .onetags
+        {
+            display: flex;
+        }
+        .tags .tag
+        {
+            border: 1px solid #999;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            margin: 0 15px 10px 0;
+            width: 220px;
+        }
+        .tag
+        {
+            width: auto;
+        }
+        .tags .titre
+        {
+            display: flex;
+            font-size: 19px;
+            padding: 5px 5px 5px 0;
+            height: 28px;
+        }
+            
+        .tags .tag i.fa
+        {
+            font-size: 17px;
+            background-color: #deebff;
+        }
+        .tag i.fa
+        {
+            color: #0065fc;
+            border-radius: 50px;
+            width: 41px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            margin-left: 0px;
+            background-color: #deebff;
+        }
+        .tag span
+        {
+            padding: 0 10px;
+            font-size: 17px;
+        }
+    
+        /*Style infos*/
+        .infos
+        {
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+            margin-right:10px;
+            height: 60px;
+            width: auto;
+            padding: 10px 5px 20px 5px;
+            
+        }
+        .infos
+        {
+            display: flex;
+            align-items: flex-start;
+            padding: 15px 10px 15px 10px;
+            margin: 10px 0 0 0;     
+        }
+        .infos span
+        {
+            display: flex;
+            align-items: flex-start;
+            
+        }
+        .infos i
+        {
+            display: flex;
+            padding: 5px;
+            border-radius: 40px;
+            border: 1px solid #999;
+            margin-right: 5px; 
+            align-items: flex-start;
+        }
+        .infos span
+        {
+           font-size: 16px;
+        }
+        .infos i.fa 
+        { 
+            color: #0065fc;
+            margin-bottom: 15px;
+        }
+    
+    
+        /*Style hebergements*/
+        .hebergements
+        {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            padding: 0;
+            margin-top: 10px;
+            width: 100%;
+        }
+        .plus_populaires .titrepopulaires i.fa-line-chart
+        {
+            color: black;
+            font-size: 23px;
+            padding-top: 20px;
+            padding-right: 10px;
+        }
+    
+        .plus_populaires h2
+        {
+            color: black;
+            text-decoration: none;
+            font-size: 23px;
+            padding-left: 10px;
+            margin-bottom: 0;
+        }
+        .content_textpp h4
+        {
+            position: relative;
+            left: 15px;
+            bottom: 6px;
+            font-size: 15px;
+        }
+        .content_textpp p
+        {
+            position: relative;
+            left: 15px;
+            bottom: 8px;
+            font-size: 12px;
+        }
+        .star i.fa:not(.grey),  
+        .stars i.fa:not(.grey)
+        {
+            color: #0065fc; 
+            font-size: 11px;   
+        }
+        .star i.fa,
+        .stars i.fa
+        {
+            font-size: 11px;
+        }
+
+        .stars
+        {
+            position: relative;
+            left: 15px;
+            top: 0;
+        }
+        .populaires_cards
+        {
+            padding: 0 10px 10px 10px;
+            width: 90%;
+            margin: 0 5px 5px 5px;       
+        }
+        .populaires_cards .cardpp
+        {
+            
+            height: 150px;
+            box-shadow: 0 0 10px #2e2d2d77;
+            margin: 5px 5px 10px 5px;
+            width: 100%;
+        }
+        .cardpp img
+        {
+            width: 70%;
+        }
+        .plus_populaires
+        {
+            width: 100%;
+            background-color: #f2f2f2;
+            border-radius: 0;
+            padding: 5px 5px 5px 5px;
+            
+        }
+        .hebergements_marseille
+        {
+            width: 100%;
+            background: none;
+            padding: 5px 5px 5px 5px;
+        }
+        .hebergements_marseille .secondcolumn
+        {
+        
+            display: flex;
+            flex-direction: column;
+            padding: 0px 5px 0 5px;
+            width: 90%; 
+            margin: 0px 10px 5px 10px;
+            height: auto;
+            
+        }
+        .hebergements_marseille .firstcolumn
+        {
+            display: flex;
+            flex-direction: column;
+            padding: 10px 5px 0 5px;
+            width: 90%; 
+            margin: 0px 10px 0 10px;
+            height: auto;
+        }
+        .firstcolumn .cardall,
+        .secondcolumn .cardall
+        {
+            height: 190px;
+            width: 100%;
+            box-shadow: 0 0 10px #2e2d2d77;
+            margin: 5px 5px 10px 5px;
+        }
+        .hebergements_marseille h2
+        {
+            padding-left: 10px;
+            font-size: 23px;
+            margin-bottom: 0;
+            padding-bottom: 0px;
+        } 
+        .content_text h4
+        {
+            font-size: 14px;
+            margin: 6px;
+            padding: 5x;
+        }
+        .content_text p
+        {
+            margin: 6px;
+            font-size: 12px;
+        } 
+        i.fa:not(.grey)
+        {
+            color: #0065fc; 
+            font-size: 9px;   
+        }
+        i.fa
+        {
+            font-size: 9px;
+        }
+        .hebergements_marseille h5
+        {
+            margin: 10px;
+            font-size: 15px;
+            padding-top: 10px;
+            padding-left: 5px;
+        }
+        .content_text .star
+        {
+            margin-bottom: 30px;
+            margin-left: 10px;
+        }
+    
+    
+        /*Style activités*/
+        .activites
+        {
+           padding: 5px;
+           width:100%; 
+           background: none;
+           margin-left: 10px;
+           margin-right: 10px;
+        }
+        .cardsactivites
+        {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            column-gap: 30px;
+            padding: 5px;
+            
+        }
+        .cardsactivites .cardtwodouble
+        {
+            height: 370px;
+            width: 90%;
+            margin: 0 0 0 0;
+            padding: 5px;
+             
+        }    
+        .cardsactivites .cardfourdouble
+        {
+            height: 370px;
+            width: 90%;
+            margin: 0 0 10px 0;
+            padding: 5px;
+            
+        }    
+        
+        .activites .cardsactivites .card
+        {
+            height: 190px;
+            width: 90%;
+            margin: 0 5px 10px 5px;
+      
+        }
+        .card,
+        .cardtwotop,
+        .cardtwobottom,
+        .cardfourtop, 
+        .cardfourbottom
+        {
+            border-radius: 20px;
+            border: 2px solid white;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 0 10px #2e2d2d77;
+            
+        } 
+        .cardfourdouble .cardfourtop,
+        .cardfourdouble .cardfourbottom, 
+        .cardtwodouble .cardtwobottom,
+        .cardtwodouble .cardtwotop
+        {
+            height: 190px;
+            margin: 0 0 10px 0;
+        }    
+        .card img
+        {
+            width: 100%;
+            height: 70%;
+        }
+        .cardtwotop img
+        {
+            width: 100%;
+            height: 70%;
+        }
+        .cardtwobottom img
+        {
+            width: 100%;
+            height: 70%;
+        }
+        .cardfourtop img
+        {
+            width: 100%;
+            height: 70%;
+        }
+        .cardfourbottom img
+        {
+            width: 100%;
+            height: 70%;
+        }
+        
+        .cardsactivites .titlecard h2
+        {
+            font-size: 15px;
+            margin: 10px;
+            padding-bottom: 10px 
+        }
+        .activites h2
+        {
+            padding-bottom :10px;
+            font-size: 23px;
+        }
+    
+        /*Style footer*/
+        footer
+        {
+            display: flex;
+            flex-direction: column;
+            background-color: #f2f2f2;
+            width: 100%;
+            margin-top: 10px;
+            padding: 30px 20px;
+            height: 440px;
+        }
+        .renseignements ul
+        {
+            padding-left: 10px;
+            height: 75px;
+        }
+    
+        .charte ul
+        {
+            padding-left: 10px;
+            height: 75px;
+            padding-bottom: 50px;
+    
+        }
+        .assistance ul
+        {
+            padding-left: 10px;
+            height: 75px;
+            margin-top: 30px;
+        }
+        
+        .renseignements ul .optiona a,
+        .assistance ul .optiona a,
+        .charte ul .optiona a
+        {
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        .renseignements ul .optionc a,
+        .renseignements ul .optionb a,
+        .assistance ul .optionb a,
+        .assistance ul .optionc a,
+        .charte ul .optionb a,
+        .charte ul .optionc a,
+        .charte ul .optiond a
+        {
+            font-size: 16px;
+        }
+     
+    
+}   
+
 
 /*media queries*/
 /* extra small devices (portrait phones)*/
 /* Apply styles for extra small devices*/
-@media (max-width: 650px)
+@media (max-width: 364px)
 
 {
     body
