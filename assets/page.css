@@ -953,14 +953,13 @@ footer
         margin: auto;
     }
     /*Style header*/
-    .main_header
-    {
+    .main_header {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: auto;
         margin-left: 10px;
         margin-right: 10px;
-        height: 148px; 
+        height: 148px;
     }
     .logo img
     {
@@ -971,6 +970,7 @@ footer
         padding: 15px 0 5px 10px;
         height: 43px; 
         width: 100px;
+        position: absolute;
     }
     .navigation ul 
     {
@@ -1018,13 +1018,6 @@ footer
         {
             margin-left: 0%;
             margin-right: 0%;
-        }
-        #main_header
-        {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-left: 10px;
-            margin-right: 10px;
         }
         .filters
         {
@@ -1126,8 +1119,6 @@ footer
             margin-left: 10px;
             width: auto;
         }
-              
-        
         .twotag
         {
             display: flex;
@@ -1558,8 +1549,8 @@ footer
     
     .main_header
     {
-        margin-left: 10px;
-        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
         width: auto;
         margin-left: 10px;
         margin-right: 10px;
@@ -1574,6 +1565,7 @@ footer
         padding: 15px 0 5px 10px;
         height: 43px; 
         width: 100px;
+        position: absolute;
     }
     .navigation ul 
     {
@@ -1625,13 +1617,6 @@ footer
     {
         margin-left: 0%;
         margin-right: 0%;
-    }
-    #main_header
-    {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 10px;
-        margin-right: 10px;
     }
     .filters
     {
