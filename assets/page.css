@@ -15,7 +15,7 @@ body
 {
     padding: 40px 0px;
 }
-header
+.main_header
 {
     display: flex;
     flex-direction: row;
@@ -72,10 +72,17 @@ main
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
-#main_header
+.liennav
 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.main_header
+{
+    display: flex;
+    flex-direction: row;
 }
 .element_filter
 {
@@ -624,12 +631,21 @@ footer
         width: 100%;
         height: auto;
     }
-    .header
+    .liennav
+    {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .main_header
     {
         margin-left: 2.5%;
         margin-right: 2.5%;
         margin-top: 10px;
         padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
     }
     .navigation ul .link a
     {
@@ -937,12 +953,11 @@ footer
         margin: auto;
     }
     /*Style header*/
-    
-    header
+    .main_header
     {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 350px;
+        display: flex;
+        flex-direction: row;
+        width: auto;
         margin-left: 10px;
         margin-right: 10px;
         height: 148px; 
@@ -959,38 +974,35 @@ footer
     }
     .navigation ul 
     {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        display: flex;
+        flex-direction: row;
         padding: 5px 5px 5px 5px;
-        width: 230px;
+        width: auto;
         height: 104px;
     }
-
     .navigation ul .link a
     {
         color: black;
-        
     }
-    .navigation ul .link a,
-    .navigation ul .signup a,
-    .navigation ul .link_option a
+    .liennav
     {
-        font-size: 17px;
+        display: flex;
+        flex-direction: row;
     }
     .navigation ul .link
     {
         margin-top: 40px;
         height: 28px;
-        padding: 20px 0 20px 40px;
+        padding: 20px 5 20px 5px;
         border-bottom: 3px solid #f2f2f2;
-        width: 25px;
+        width: 50%;
     }
     .navigation ul .link_option
     {
         margin-top: 40px;
         height: 28px;
-        padding: 20px 0 20px 40px; 
-        width: 135px;
+        padding: 20px 5 20px 5px; 
+        width: 50%;
         border-bottom: 3px solid #0065fc
     } 
 
@@ -999,7 +1011,7 @@ footer
         padding: 10px 20px 20px 20px;
         height: 78px;  
         border-bottom: 3px solid #f2f2f2;
-
+        margin-right: 20px;
     }
         /*Style elements filters*/
         main
@@ -1544,11 +1556,11 @@ footer
     }
     /*Style header*/
     
-    header
+    .main_header
     {
         margin-left: 10px;
         margin-right: 10px;
-        width: 350px;
+        width: auto;
         margin-left: 10px;
         margin-right: 10px;
         height: 148px; 
@@ -1565,8 +1577,8 @@ footer
     }
     .navigation ul 
     {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        display: flex;
+        flex-direction: row;
         padding: 5px 5px 5px 5px;
         width: 230px;
         height: 104px;
@@ -1883,6 +1895,7 @@ footer
         height: 130px;
         box-shadow: 0 0 10px #2e2d2d77;
         margin: 5px 5px 10px 5px;
+        width: auto;
     }
     .plus_populaires
     {
