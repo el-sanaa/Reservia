@@ -1024,13 +1024,6 @@ footer
             margin-left: 0%;
             margin-right: 0%;
         }
-        #main_header
-        {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin-left: 10px;
-            margin-right: 10px;
-        }
         .filters
         {
             height: 170px;
@@ -1563,11 +1556,11 @@ footer
     
     .main_header
     {
-        margin-left: 10px;
-        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
         width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
         height: 148px; 
     }
     .logo img
@@ -1579,14 +1572,17 @@ footer
         padding: 15px 0 5px 10px;
         height: 43px; 
         width: 100px;
+        position: absolute;
     }
     .navigation ul 
     {
         display: flex;
         flex-direction: row;
-        padding: 5px 5px 5px 5px;
-        width: 230px;
+        flex-wrap: wrap-reverse;
+        padding: 0;
+        width: 100%;
         height: 104px;
+        align-items: flex-end;
     }
 
     .navigation ul .link a
@@ -1604,25 +1600,32 @@ footer
     {
         margin-top: 40px;
         height: 28px;
-        padding: 20px 0 20px 40px;
+        padding: 20px 5px 20px 5px;
         border-bottom: 3px solid #f2f2f2;
-        width: 25px;
+        width: 50%;
     }
     .navigation ul .link_option
     {
         margin-top: 40px;
         height: 28px;
-        padding: 20px 0 20px 40px; 
-        width: 135px;
+        padding: 20px 5px 20px 5px; 
+        width: 50%;
         border-bottom: 3px solid #0065fc
     } 
 
     .navigation ul .signup
     {
-        padding: 10px 20px 20px 20px;
+        padding: 10px 60px 20px 20px;
         height: 78px;  
-        border-bottom: 3px solid #f2f2f2;
-
+        margin-right: 20px;
+        width: auto;
+        position: absolute;
+    }
+    .liennav
+    {
+        display: flex;
+        flex-direction: row;
+        width: inherit;
     }
 
     /*Style elements filters*/
