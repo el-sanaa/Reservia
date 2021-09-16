@@ -281,7 +281,11 @@ i.fa:not(.grey)
     height: 200px;
     box-shadow: 0 0 10px #2e2d2d77;
 }
-
+.hebergements_marseille h2 
+{
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
 
 .Afficher_plus
 {
@@ -289,7 +293,6 @@ i.fa:not(.grey)
     font-size: 15px;
     font-weight: bold;
 }
-
 p
 {
     font-weight: normal;
@@ -297,7 +300,6 @@ p
 }
 .content_text h4,
 .content_text p
-
 {
     margin: 6px;
     
@@ -306,7 +308,6 @@ p
 {
     margin-left: 5px;
 }
- 
 i.fa:not(.grey)
 {
     color: #0065fc; 
@@ -328,7 +329,6 @@ i.fa
     background-color: #f2f2f2;
     border-radius: 20px;
  }
-
 .titrepopulaires
 {
     display: flex;
@@ -340,8 +340,6 @@ i.fa
     font-size: 25px;
     padding-top: 20px;
 }
-
-
 .content_textpp h4
 {
    position: relative;
@@ -382,7 +380,6 @@ i.fa
     width: 40%;
     height: 158px;
 }
-
 .cardall img
 {
     width: 100%;
@@ -393,7 +390,6 @@ i.fa
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 .cardall:hover
 {
     -webkit-transform: scale(1.1);
@@ -437,13 +433,11 @@ i.fa
     height: 440px;
     margin-right: 20px; 
 }    
-
 .cardsactivites .card
 {
     margin-right: 20px;
     height: 440px;
 }
-
 .card,
 .cardtwotop,
 .cardtwobottom,
@@ -503,10 +497,11 @@ i.fa
     margin: 10px;
     padding-bottom: 10px 
 }
-
-h2
+.activites h2
 {
-    padding-bottom :10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
 }
 h5
 {
