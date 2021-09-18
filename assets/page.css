@@ -186,6 +186,8 @@ main
     width: 48px;
     border: 1px solid #deebff;
     font-size: 20px;
+    padding: 2px;
+    
 }
 .tags i.fa
 {
@@ -738,6 +740,8 @@ footer
         align-items: center;
         margin-left: 0px;
         background-color: #deebff;
+        padding: 1px;
+        border-color: #deebff;
     }
     .tag span
     {
@@ -950,7 +954,7 @@ footer
     }
     .logo
     {
-        padding: 12px 0 5px 10px;
+        padding: 12px 0 5px 20px;
         height: 43px; 
         width: 100px;
         position: absolute;
@@ -973,7 +977,7 @@ footer
     {
         margin-top: 40px;
         height: 28px;
-        padding: 20px 5 20px 5px;
+        padding: 20px 0 20px 60px;
         border-bottom: 3px solid #f2f2f2;
         width: 50%;
     }
@@ -981,14 +985,14 @@ footer
     {
         margin-top: 40px;
         height: 28px;
-        padding: 20px 20px 20px 30px; 
+        padding: 20px 20px 20px 40px; 
         width: 50%;
         border-bottom: 3px solid #0065fc
     } 
 
     .navigation ul .signup
     {
-        padding: 10px 60px 20px 20px;
+        padding: 10px 10px 20px 20px;
         height: 78px;  
         margin-right: 20px;
         width: auto;
@@ -1142,6 +1146,8 @@ footer
         {
             font-size: 17px;
             background-color: #deebff;
+            padding: 3px;
+            border-color: #deebff;
         }
         .tag i.fa
         {
@@ -1579,7 +1585,7 @@ footer
 
     .navigation ul .signup
     {
-        padding: 10px 60px 20px 10px;
+        padding: 1px 10px 20px 10px;
         height: 78px;  
         margin-right: 20px;
         width: auto;
