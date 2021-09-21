@@ -284,6 +284,8 @@ i.fa:not(.grey)
     width: 30%;
     height: 200px;
     box-shadow: 0 0 10px #2e2d2d77;
+    color: black;
+    text-decoration: none;
 }
 .hebergements_marseille h2 
 {
@@ -324,6 +326,7 @@ i.fa
 }
 
 /*Style partie plus populaires*/
+
 .cartes{
     object-fit: cover;
 }
@@ -379,6 +382,8 @@ i.fa
     height: 146px;
     box-shadow: 0 0 10px #2e2d2d77;
     margin-left: 15px;
+    text-decoration: none;
+    color: black;
 }
 .cardpp img
 {
@@ -414,7 +419,7 @@ i.fa
 .activites
 {
    padding: 25px;
-   width: 100%;
+   width: 95%;
 }
 .cardsactivites
 {
@@ -454,6 +459,8 @@ i.fa
     overflow: hidden;
     background-color: white;
     box-shadow: 0 0 10px #2e2d2d77;
+    color: black;
+    text-decoration: none;
 } 
 .cardtwodouble .cardtwotop
 {
@@ -579,7 +586,7 @@ footer
 {
     font-size: 18px;
 }
- 
+
 /*media queries*/
 /*media devices xlarge */
 /* Apply styles starting from xlarge devices and up to xlarge devices */
