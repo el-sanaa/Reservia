@@ -4,6 +4,7 @@ body
     font-family: 'Raleway', sans-serif;
     width: 100%;
     margin: auto;
+    
 }
 /*Style header*/
 
@@ -34,15 +35,22 @@ body
 .navigation ul .link_option
 {
     padding: 20px 20px;
-    border-top: 2px solid #fff;
+    
 }
 .navigation ul .link
 {
     padding: 20px 20px;
     border-top: 2px solid #fff;
-    
     text-decoration-line: none;
 }
+.navigation ul .link_option:hover
+{
+    border-top: 3px solid #0065fc ;
+}
+.navigation ul .link:hover
+{
+    border-top: 3px solid #f2f2f2;
+} 
 .navigation ul .signup
 {
     padding: 20px 20px;
@@ -61,6 +69,7 @@ body
 {
     color: #0065fc;
     text-decoration: none;
+    
 }
 .navigation ul .link a
 {
@@ -118,7 +127,7 @@ main
 }
 .search_button:hover
 {
-    color: #f2f2f2;
+    color: black;
     background-color: #f2f2f2;
 }
 .search_input:hover
@@ -311,6 +320,7 @@ i.fa:not(.grey)
 i.fa
 {
     font-size: 13px;
+    color: #f2f2f2;
 }
 
 /*Style partie plus populaires*/
@@ -393,12 +403,12 @@ i.fa
 .secondcolumn:hover
 {
     cursor: pointer;
-    transform: scale(1);
+    transform: scale(1.1);
 }
 .secondcolumn:hover
 {
     cursor: pointer;
-    transform: scale(1);
+    transform: scale(1.1);
 }
 /*Style activités à Marseille*/
 .activites
@@ -666,7 +676,7 @@ footer
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px; 
     }
-    .icon:hover
+    .filters .element_filter .icon:hover
     {
         color: #0065fc;
         background-color: white;
